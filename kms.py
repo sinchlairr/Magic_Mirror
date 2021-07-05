@@ -50,9 +50,9 @@ def index():
     return render_template('index.html')
 
 
-# @app.route('/video')
-# def video():
-#     return Response(generate(), mimetype='multipart/x-mixed-replace; boundary=frame')
+@app.route('/video')
+def video():
+    return Response(generate(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 if __name__=="__main__":

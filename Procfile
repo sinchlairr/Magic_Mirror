@@ -1,1 +1,1 @@
-web: gunicorn app:kms.py
+web: python kms.py runserver

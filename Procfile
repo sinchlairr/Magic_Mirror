@@ -1,1 +1,1 @@
-web: gunicorn mm:kms --log-file=-
+web: gunicorn app:kms --log-file -

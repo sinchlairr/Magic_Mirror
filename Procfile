@@ -1,1 +1,1 @@
-web: gunicorn app:kms
+web: gunicorn app:kms.py

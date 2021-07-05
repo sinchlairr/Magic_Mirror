@@ -21,7 +21,7 @@ def generate():
     while(True):
 
     # Capture the video frame
-    # by frame
+
         ret, frame = vid.read()
         H,W = frame.shape[:2]
 

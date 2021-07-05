@@ -1,1 +1,1 @@
-web: python kms.py runserver
+web: gunicorn --bind 0.0.0.0:$PORT flaskapp:kms

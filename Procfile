@@ -1,1 +1,0 @@
-web: gunicorn mm:kms --log-file -

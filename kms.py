@@ -3,6 +3,7 @@ import cv2
 from vcam import vcam,meshGen
 import numpy as np
 import math
+import os
 
 app = Flask(__name__)
 vid=cv2.VideoCapture(0)
@@ -56,4 +57,5 @@ def video():
 
 
 if __name__=="__main__":
-    app.run()
+    
+    app.run(host='0.0.0.0', port = int(os.environ.get('PORT', 5000)))
